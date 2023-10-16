@@ -26,8 +26,8 @@ answer, including your reasoning, to this markdown file.
 
 The worst-case big $\Theta$ is $O(V+E)$, reasons are as follows:
 1. Function toAdjacencyList mainly to loop edges to get the source(start nodes) and following destination nodes. $O(E)$
-2. Function findPath implements depth-first search and returns the path from startNode to targetNode. Since the worst-case time complexity of DFS is $O(V+E)$, this function's time complexity is also $O(V+E)$.
-3. Those two functions toAdjacencyList and findPath's time complexity count together, mainly dominated by $O(V+E)$ result in the total implementation time complexity of $O(V+E)$.
+2. Function depthFirstSearch implements depth-first search and returns the path from startNode to targetNode. Since the worst-case time complexity of DFS is $O(V+E)$, this function's time complexity is also $O(V+E)$.
+3. Those two functions toAdjacencyList and depthFirstSearch's time complexity count together, mainly dominated by $O(V+E)$ result in the total implementation time complexity of $O(V+E)$.
 ## Bonus
 
 Implement and analyze breadth-first search.
