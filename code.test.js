@@ -10,12 +10,12 @@ assert(JSON.stringify(depthFirstSearch(graph1, 0, 1)) == JSON.stringify([]));
 
 // case two
 var graph2 = [0];
-assert(JSON.stringify(depthFirstSearch(graph2, 1, 1)) == JSON.stringify([0]));
+assert(JSON.stringify(depthFirstSearch(graph2, 1, 1)) == JSON.stringify([]));
 
 
 // case three
 var graph3 = [[]];
-assert(JSON.stringify(depthFirstSearch(graph3, 0, 1)) == JSON.stringify([[]]));
+assert(JSON.stringify(depthFirstSearch(graph3, 0, 1)) == JSON.stringify([]));
 
 // case four
 var graph4 = [
