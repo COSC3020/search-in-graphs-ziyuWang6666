@@ -12,7 +12,7 @@ function depthFirstSearch(graph, startNode, targetNode) {
     visited.add(vertex);
 
       for (const neighbor of graph[vertex]) {
-        if (!visited.has(neighbor) && neighbor > 0) {
+        if (!visited.has(neighbor) && neighbor >= 0) {
           stack.push(neighbor);
           paths[neighbor] = paths[vertex].concat([neighbor]);
           if (neighbor === targetNode) {
