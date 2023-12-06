@@ -32,5 +32,5 @@ assert(JSON.stringify(depthFirstSearch(graph4, 0, 2)) == JSON.stringify([ 0, 2 ]
 
 // case five
 var graph5 = [[-1]];
-assert(JSON.stringify(depthFirstSearch(graph5, 0, 1)) == JSON.stringify([[-1]]));
-assert(JSON.stringify(depthFirstSearch(graph5, 0, 0)) == JSON.stringify([[-1]]));
+assert(JSON.stringify(depthFirstSearch(graph5, 0, 1)) == JSON.stringify([]));
+assert(JSON.stringify(depthFirstSearch(graph5, 0, 0)) == JSON.stringify([]));
